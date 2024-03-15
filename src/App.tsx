@@ -2,7 +2,8 @@
 import { useState } from 'react';
 import Button from './Components/Button';
 import MyInput from './Components/MyInput';
-import './App.css'
+import PreForm from './Components/preForm';
+import './App.css';
 
 // Função para rodar em princípio o site, para abri-lo pelo VScode usa-se o comando npm run dev
 // no terminal.
@@ -25,14 +26,8 @@ function App() {
   return (
     // Mini-tags, não conheço todas as utilidades, mas permite colocar mais de uma mesma tag.
     <>
-      <MyInput type='text' 
-      placeholder='Olá mundo!' 
-      />
+    <PreForm Action=''></PreForm>
 
-      <MyInput type='password' 
-      placeholder='Senha' 
-      />
-      
     {/* Aqui a propriedade é chamada */}
       <Button onClick={handleOnClick}><h2>Adicionar item</h2></Button>
 

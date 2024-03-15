@@ -1,9 +1,9 @@
 button {
-  margin: 0 auto;
+  margin: 0 0 0 5%;
 }
 
 #root {
-  min-width: 1000px;
+  min-width: 800px;
 }
 
 #listaItens {
