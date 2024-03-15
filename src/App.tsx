@@ -26,14 +26,13 @@ function App() {
   }
 
   const toggleMode = () => {
-    const html = 
+    const html = document.documentElement;
     html.classList.toggle("light")
   }
  
   return (
     // Mini-tags, não conheço todas as utilidades, mas permite colocar mais de uma mesma tag.
     <>
-      <div id='ContainerLuz'>
           <Title>
             Contador de itens
           </Title>
@@ -56,7 +55,6 @@ function App() {
               ))}
             </div>
           )}
-      </div>
     </>
   )
 }
