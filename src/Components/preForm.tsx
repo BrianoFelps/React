@@ -3,22 +3,19 @@ import Button from './Button';
 import MyInput from './MyInput';
 
 interface Props {
-    Action: string;
-}
-
-const message = () => {
-    const text = 'oi';
-    alert(text);
+    Action?: string;
+    onSubmit: () => void;
 }
 
 function PreForm(props: Props){
     return(
-        <form action={props.Action}>
-            <MyInput type='Text' placeholder='Olá mundo! (Digite seu nome)'></MyInput> <br />
-            <Button onClick = {message}>
-                <h1>Ok</h1>
+        <div className='Form'>
+            <MyInput type='Text' placeholder='Olá mundo! (Digite seu nome)'></MyInput> 
+            <br/>
+            <Button onClick={props.onSubmit}>
+                <h1>Adicionar item</h1>
             </Button>
-        </form>
+        </div>
     )
 }
 

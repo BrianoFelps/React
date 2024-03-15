@@ -1,8 +1,41 @@
+body{
+  background: rgb(15, 15, 15);
+}
+
 button {
   margin: 0 0 0 5%;
 }
 
+.Título {
+  color: white;
+  margin: 50px auto;
+  text-shadow: 0 0 5px white;
+}
+
+.Form button{
+  width: 27%;
+  position: absolute;
+  left: 63.5%;
+  bottom: 63%;
+  box-shadow: 0 0 10px 1px rgb(255, 255, 255);
+}
+
+.Form button:hover{
+  box-shadow: 0 0 10px 3px rgb(255, 255, 255);
+}
+
+.Form input{
+  margin: 0px 0 100px 0;
+  box-shadow: 0 0 10px 1px rgb(255, 255, 255);
+}
+
+.Form input:focus{
+  box-shadow: 0 0 10px 3px rgb(255, 255, 255);
+}
+
 #root {
+  position: relative;
+  text-align: center;
   min-width: 800px;
 }
 
@@ -13,7 +46,7 @@ button {
   border: 1px solid #f3f3f3;
   border-radius: 5px;
   background: #f3f3f3;
-  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 10px 3px rgb(255, 255, 255);
   overflow-y: auto;
 }
 
@@ -28,6 +61,25 @@ button {
   border-radius: 10px;
 }
 
+#listaItens p:hover{
+  transition: .2s;
+  background: #272727;
+  color: white;
+}
+
+/* @media (min-width: 1900px){
+  .Form button{
+      width: 517px;
+  }
+}
+
+@media (min-width: 800px){
+  .Form button{
+      width: 200px;
+  }
+} */
+
+/* 
 
 
 
@@ -48,11 +100,7 @@ button {
 
 
 
-
-
-
-
-
+ */
 /* #root {
   max-width: 1280px;
   margin: 0 auto;
