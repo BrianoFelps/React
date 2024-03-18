@@ -1,13 +1,11 @@
 .switch {
     position: relative;
     width: 64px;
-    margin: 4px auto;
   }
   
 .switch button {
     width: 32px;
     height: 32px;
-    background: white var(--switch-bg) no-repeat center;
     border: 0;
     border-radius: 50%;
   
@@ -44,13 +42,13 @@
       left: 0;
     }
     to{
-      left: 50%;
+      left: 52%;
     }
   }
   
 @keyframes slide-back {
     from{
-      left: 50%;
+      left: 52%;
     }
     to{
       left:0;
