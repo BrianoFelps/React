@@ -2,18 +2,19 @@
 import { ChangeEvent, useState } from 'react';
 // import Button from './Components/Button';
 // import MyInput from './Components/MyInput';
-import Title from './Title'
-import PreForm from './preForm';
-import Switch from './switch';
-import Counter from './Counter';
+import Title from '../Components/Title'
+import PreForm from '../Components/preForm';
+import Switch from '../Components/switch';
+import Counter from '../Components/Counter';
 import './CriadorDeListas.css';
 
 // Função para rodar em princípio o site, para abri-lo pelo VScode usa-se o comando npm run dev
 // no terminal.
 function CriadorListas() {
-  // Hook é usado para facilitar a renderização, o usestate é usado para alternar estados
-  // de uma página, por exemplo. Que nem a questão da tabuada: a página sem ela é o primeiro
-  // estado, com o click no btão e ela o estado se torna o segundo.
+  // Hook é usado para facilitar a renderização, ele é o usestate nesse caso,
+  // que é usado para alternar estados de uma página, por exemplo. 
+  //  Que nem a questão da tabuada: a página sem ela é o primeiro
+  // estado, com o click no btão e ele o estado se torna o segundo.
   // Os items e setItems (esse é uma função) vão receber valores em array
   // O useState com a string vazia define que no estado inicial não há nada
   const [items, setItems] = useState<string[]>([]);
@@ -40,11 +41,6 @@ function CriadorListas() {
 
   }
 
-  const toggleMode = () => {
-    const html = document.documentElement;
-    html.classList.toggle("light")
-  }
- 
   return (
     // Mini-tags, não conheço todas as utilidades, mas permite colocar mais de uma mesma tag.
     <>
@@ -52,7 +48,7 @@ function CriadorListas() {
         <h1>Contador de itens</h1>
       </Title>
 
-      <Switch onClick={toggleMode}/>
+      <Switch/>
           <br /><br />
           
       <Title id='TituloLista'>
@@ -63,7 +59,7 @@ function CriadorListas() {
         onSubmit={handleOnClick}
         onInputChange={handleOnInputChange}
         // Ternário. O primeiro é teste condicional, o ? é um if, e o : é um else, 
-        // esse que serve par adeixar o input vazio.
+        // esse que serve para deixar o input vazio.
         inputValue ={newItem.length > 0 ? newItem : ""}
       />
 

@@ -1,0 +1,13 @@
+#root{
+    position: relative;
+}
+
+#TFsenha{
+    margin-bottom: 80px;
+}
+
+.switch{
+    position: absolute;
+    bottom: 90.5%;
+    left: 80%;
+}

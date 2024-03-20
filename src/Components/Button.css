@@ -4,21 +4,23 @@
 }
 
 button{
-    background: white;
+    background: var(--surface-color);
+    color: var(--text-color);
     height: 6em;
     width: 18em;
     font-size: 0.9em;
     border-radius: 15px;
-    border: 4px solid black;
-    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.8);
+    border: 4px solid var(--text-color);
+    box-shadow: 0 0 10px 1px var(--text-color);
     outline: none;
 }
 
 button:hover{
     cursor: pointer;
-    color: rgb(255, 255, 255);
-    background: #000000;
-    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 1);
+    color: var(--invert-text-color);
+    background: #131313;
+    box-shadow: 0 0 10px 3px var(--text-color);
+    text-shadow: 0 0 3px var(--invert-text-color);
     border: 3px solid white;
     cursor: pointer;
     transition: .2s;

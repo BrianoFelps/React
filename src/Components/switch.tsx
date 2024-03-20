@@ -1,12 +1,13 @@
 import './switch.css'
 
-interface Props {
-    onClick: () => void;
-}
+const toggleMode = () => {
+    const html = document.documentElement;
+    html.classList.toggle("light")
+  }
 
-function Switch(props: Props){
+function Switch(){
     return(
-        <div className='switch' onClick={props.onClick}>
+        <div className='switch' onClick={toggleMode}>
             <button>
             </button>
             <span>

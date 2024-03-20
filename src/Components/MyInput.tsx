@@ -14,6 +14,7 @@ interface Props{
 
     placeholder?: string;
 
+    id?: string;
     // identifica se o input recebeu alterações e depois guarda no newItem
     onChange?: (e : ChangeEvent<HTMLInputElement>) => void;
 }
@@ -28,6 +29,7 @@ function MyInput(props: Props) {
         style={{background:`${props.BgColor}`}}
         onChange={props.onChange}
         value={props.value}
+        id={props.id}
         />
     )
 }

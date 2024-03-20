@@ -1,5 +1,5 @@
 :root {
-    --text-color: white;
+    --text-color: #ffffff;
     --invert-text-color: white;
     --bg-color: black;
     --stroke-color: rgba(255, 255, 255, 0.5);
@@ -59,32 +59,16 @@
   }
   
   .Form input{
-    color: var(--text-color);
     margin: 0px 0 110px 0;
-    box-shadow: 0 0 10px 1px var(--text-color);
   }
-  
-  .Form input:focus{
-    color: var(--invert-text-color);
-    box-shadow: 0 0 10px 3px var(--text-color);
-  }
-  
+
   .Form button{
-    background: var(--surface-color);
-    color: var(--text-color);
     width: 27%;
     position: absolute;
     left: 63.5%;
     bottom: 63%;
-    box-shadow: 0 0 10px 1px var(--text-color);
   }
-  
-  .Form button:hover{
-    background: #202020;
-    color: var(--invert-text-color);
-    box-shadow: 0 0 10px 3px var(--text-color);
-  }
-  
+
   #root {
     position: relative;
     text-align: center;
